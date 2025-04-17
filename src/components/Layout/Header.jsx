@@ -16,7 +16,7 @@ import { FiMenu } from "react-icons/fi";
 import DropDown from "./DropDown";
 import { categoriesData } from "../../static/data";
 import Navbar from "./Navbar"; 
-import Cart from "../cart/Cart";
+import Cart from "../Cart/Cart"
 import Wishlist from "../Wishlist/Wishlist";
 
 const Header = ({ activeHeading }) => {
