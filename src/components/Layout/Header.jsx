@@ -90,6 +90,13 @@ const Header = ({ activeHeading }) => {
                 {cart.length}
               </span>
             </div>
+            {/* cart popup */}
+            {openCart ? <Cart setOpenCart={setOpenCart} /> : null}
+
+            {/* wishlist popup */}
+            {openWishlist ? (
+              <Wishlist setOpenWishlist={setOpenWishlist} />
+            ) : null}
 
             <div className="relative cursor-pointer">
               {isAuthenticated ? (
@@ -181,6 +188,8 @@ const Header = ({ activeHeading }) => {
             </span>
           </div>
         </div>
+        {/* cart popup */}
+        {openCart ? <Cart setOpenCart={setOpenCart} /> : null}
 
         {/* Mobile Menu (Side Drawer) */}
         {mobileMenuOpen && (
@@ -198,6 +207,10 @@ const Header = ({ activeHeading }) => {
                     </span>
                   </div>{" "}
                 </div>
+                {/* wishlist popup */}
+                {openWishlist ? (
+                  <Wishlist setOpenWishlist={setOpenWishlist} />
+                ) : null}
               </span>
               <AiOutlineClose
                 size={25}
