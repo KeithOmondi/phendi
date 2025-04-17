@@ -15,9 +15,9 @@ import { FiMenu } from "react-icons/fi";
 
 import DropDown from "./DropDown";
 import { categoriesData } from "../../static/data";
-import Navbar from "./Navbar";
-import Cart from "../cart/Cart"; // Assuming you have this component
-import Wishlist from "../wishlist/Wishlist"; // Assuming you have this component
+import Navbar from "./Navbar"; 
+import Cart from "../cart/Cart";
+import Wishlist from "../Wishlist/Wishlist";
 
 const Header = ({ activeHeading }) => {
   const [dropDown, setDropDown] = useState(false);
